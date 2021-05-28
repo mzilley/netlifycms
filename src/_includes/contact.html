@@ -1,0 +1,20 @@
+---
+layout: _default
+---
+<div class="center mw6 pv3">
+    <img src="{{ image }}" alt="" class="db w4 center pv4" />
+
+    <h1 class="font-bold text-5xl">{{title}}</h1>
+
+    {{ content | safe }}
+
+    <div class="flex-ns mb3">
+        {% for entry in entries %}
+            <div>
+                <h4 class="f4 b lh-title mb2 primary">{{ entry.heading }}</h4>
+                <p>{{ entry.text }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>

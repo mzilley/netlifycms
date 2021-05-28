@@ -1,0 +1,127 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  repo: bublick/neat-starter
+  branch: main
+  site_url: https://bub-kaldi-11ty.netlify.app
+  
+  ### enable below lines for github integration ###
+  # name: github
+  # repo: mzilley/neat-starter
+media_folder: "src/static/img"
+public_folder: "/static/img"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+collections:
+  # Settings
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "items"
+        file: "src/_data/navigation.yaml"
+        fields:
+          - label: Nav Items
+            name: items
+            widget: list
+            allow_add: true
+            collapsed: true
+            fields:
+              - { label: Title, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
+              - {label: "Nested", name: childs, widget: list, summary: "Nested menu elements", fields: [
+              { label: Title, name: text, widget: "string" },
+              { label: URL, name: url, widget: "string" }]}
+      - label: "Quick Links"
+        name: "links"
+        file: "src/_data/quicklinks.yaml"
+        fields:
+          - label: Nav Items
+            name: links
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: URL, name: url, widget: string }
+              - { label: Description, name: desc, widget: string }
+      - label: "Meta Settings"
+        name: "settings"
+        file: "src/_data/settings.yaml"
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Author, name: author, widget: string }
+          - { label: URL, name: url, widget: string }
+  # Blog
+  - label: "Blog"
+    name: "blog"
+    folder: "src/posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["Tags", "created", "from", "config.yml"]
+  # Pages
+  - label: "Pages"
+    name: "pages"
+    editor:
+      preview: true
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "src/_data/frontpage.yaml"
+        fields:
+          - {label: "Top Section", name: topsection, widget: object, fields: [
+              { label: Title, name: title, widget: "string" },
+              { label: Subtitle, name: subtitle, widget: "string"},
+              { label: Image, name: image, widget: "image"}]}
+          - {label: "Extra", name: extra, widget: object, summary: "Extra options", fields: [
+              { label: Quick Links, name: quicklinks, widget: "boolean", default: true }]}
+      - label: "Contact Page"
+        name: "contact"
+        file: "src/contact.md"
+        fields:
+          - { image: Image, name: image, widget: "image"}
+          - { label: Title, name: title, widget: "string" }
+          - { label: Body, name: 'body', widget: "markdown" }
+          - label: "Entries"
+            name: entries
+            widget: list 
+            fields:
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+      - label: "Values"
+        name: "values"
+        file: "src/values.md"
+        fields:
+          - { image: Cover, name: cover, widget: "image"}
+          - { label: Title, name: title, widget: "string" }
+          - label: "Values"
+            name: values
+            widget: list 
+            fields:
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Text
+                name: text
+                widget: text
+              - label: Image
+                name: imageUrl
+                widget: image

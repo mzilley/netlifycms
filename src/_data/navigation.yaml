@@ -1,0 +1,15 @@
+items:
+  - text: Contact
+    url: /contact
+    childs:
+      - text: One more
+        url: "#"
+  - text: Values
+    url: /values
+  - text: Blog
+    url: /blog
+    childs:
+      - text: This is my first post
+        url: /posts/my-first-post/
+      - text: This is my second post
+        url: /posts/second-post/
