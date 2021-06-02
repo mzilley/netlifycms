@@ -4,8 +4,8 @@ backend:
   repo: mzilley/netlifycms
   branch: main
   site_url: https://netlifycmsstart.netlify.app
-  media_folder: "src/static/img"
-  public_folder: "/static/img"
+  media_folder: src/static/img
+  public_folder: /static/img
 
   
   ### enable below lines for github integration ###
