@@ -1,3 +1,6 @@
-name: Test Site
-author: Test Site
+name: Netlify Starter
+author: Matt Zilley
 url: /
+SEO:
+  site_name: Netlify Starter
+  separator: "|"
