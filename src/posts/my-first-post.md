@@ -1,8 +1,8 @@
 ---
 title: This is my first post
 description: Capitalize on low hanging fruit to identify a ballpark value added
-  activity to beta test. Override the digital divide with additional
-  clickthroughs from DevOps.
+  activity. Override the digital divide with additional clickthroughs from
+  DevOps.
 author: Matt Zilley
 date: 2021-06-02T01:31:38.730Z
 tags:
