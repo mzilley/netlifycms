@@ -6,10 +6,10 @@ backend:
   site_url: https://netlifycmsstarter.netlify.app
   
   ### enable below lines for github integration ###
-  # name: github
-  # repo: mzilley/neat-starter
-media_folder: "src/static/img"
-public_folder: "/static/img"
+  name: github
+  repo: mzilley/neat-starter
+  media_folder: "src/static/img"
+  public_folder: "/static/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
