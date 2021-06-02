@@ -5396,7 +5396,7 @@ html {
  font-size:18px;
  font-size:var(--font-size);
  background-color:#2b2523;
- background-color:var(--black)
+ background-color:var(--highlight)
 }
 @media screen and (min-width:50em) {
  html {
@@ -6118,10 +6118,6 @@ svg {
   --tw-text-opacity: 1;
   color: rgba(99, 102, 241, var(--tw-text-opacity));
   background: #f6f6f6;
-}
-
-.nav__sub-item-anchor{
-
 }
 
 .nav__item--has-childs:hover .nav__sub-list{
