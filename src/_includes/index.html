@@ -1,23 +1,21 @@
 ---
 layout: _default
-title: Neat Starter
-path: home
 ---
 
-{% if frontpage.topsection %}
+{% if topsection %}
 <div class="mx-auto justify-center items-center">
-    <div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('{{ frontpage.topsection.image }}')">
+    <div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('{{ topsection.image }}')" alt="{{ topsection.alt }}">
         <div class="mw7 center ph3">
         <div class="db mb3">
             <div class="mw7 relative bg-fix-primary mb3">
             <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-                {{ frontpage.topsection.title }}
+                {{ topsection.title }}
             </h1>
             </div>
             <div class="mw7 relative bg-fix-primary">
             {{ if .subtitle }}
             <p class="b f4 di lh-title mb3 white mw6 bg-primary">
-                {{ frontpage.topsection.subtitle }}
+                {{ topsection.subtitle }}
             </p>
             {{ end }}
             </div>
@@ -27,8 +25,16 @@ path: home
 </div>
 {% endif %}
 
-{% if frontpage.extra.quicklinks %}
+{% if content %}
+<div class="container mx-auto flex flex-col items-center">
+    <div class="w-full max-w-2xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 px-4 lg:mx-0">
+        {{ content | safe }}
+    </div>
+</div>
+{% endif %}
+
+{% if extra.quicklinks %}
 <div class="container mx-auto flex flex-col justify-center items-center">
-  {% include "./_includes/partials/quicklinks.html" %}
+  {% include "./partials/quicklinks.html" %}
 </div>
 {% endif %}
