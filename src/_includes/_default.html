@@ -12,9 +12,11 @@
     {% if keywords %}
         <meta name="keywords" content="HTML, CSS, JavaScript">
     {% endif %}
-    <meta property="og:image" content="{{ settings.favicon }}">
     <meta property="og:title" content="{{settings.name}}">
-    <meta name="twitter:title" content="{{settings.name}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="{{ settings.favicon }}">
+    <meta property="og:url" content="https://netlifycmsstart.netlify.app/">
+    <meta name="twitter:card" content="{{ settings.favicon }}">
     <meta property="og:locale" content="en_US" />
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
