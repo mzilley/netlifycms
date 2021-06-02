@@ -87,7 +87,7 @@ collections:
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
-          - { label: Keywords, summary: "Comma separated", name: keywords, widget: string }
+          - { label: Keywords (comma separated), summary: "Comma separated", name: keywords, widget: string }
           - { label: Body, name: 'body', widget: "markdown" }
           - {label: "Top Section", name: topsection, widget: object, fields: [
               { label: Title, name: title, widget: "string" },
@@ -102,7 +102,7 @@ collections:
         fields:
           - { label: Title, name: title, widget: "string" }
           - { label: Description, name: description, widget: string }
-          - { label: Keywords, summary: "Comma separated", name: keywords, widget: string }
+          - { label: Keywords (comma separated), summary: "Comma separated", name: keywords, widget: string }
           - { image: Image, name: image, widget: "image"}
           - { label: Body, name: 'body', widget: "markdown" }
           - label: "Entries"
