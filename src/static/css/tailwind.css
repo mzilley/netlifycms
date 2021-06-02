@@ -5396,7 +5396,7 @@ html {
  font-size:18px;
  font-size:var(--font-size);
  background-color:#2b2523;
- /* background-color:var(--accent) */
+ background-color:var(--black)
 }
 @media screen and (min-width:50em) {
  html {
@@ -6028,7 +6028,7 @@ svg {
  box-shadow:var(--spacing-small) 0 0 var(--primary),-var(--spacing-small) 0 0 var(--primary)
 }
 :root {
- --primary:#333;
+ --primary:#f40;
  --highlight:#fed5c6;
  --white:#fff;
  --off-white:#fffdfc;
@@ -6079,8 +6079,8 @@ svg {
 
 .nav__item--has-childs {
   display: block;
-  white-space: nowrap;
-  float: left;
+  //white-space: nowrap;
+  //float: left;
   position: relative;
 }
 
@@ -6120,8 +6120,12 @@ svg {
   background: #f6f6f6;
 }
 
+.nav__sub-item-anchor{
+
+}
+
 .nav__item--has-childs:hover .nav__sub-list{
-  display: block;
+  display: block
 }
 
 @media screen and (max-width: 1110px){
@@ -6146,11 +6150,11 @@ svg {
 /*Your Custom CSS Goes here*/
 
 h1 {
-  @apply text-4xl mb-3 text-center lg:text-7xl;
+  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
 }
 
 h3 {
-  @apply text-2xl mb-3;
+  @apply text-2xl font-bold mb-3;
 }
 
 p {
