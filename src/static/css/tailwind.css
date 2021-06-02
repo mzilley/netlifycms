@@ -2051,8 +2051,8 @@ fieldset {
 }
 input,
 textarea {
- background-color:#ebe7e6;
- background-color:var(--grey-2);
+ background-color: transparent;
+ border: 1px solid #333;
  border-radius:.25rem;
  border-radius:var(--border-radius);
  padding:12px 16px 10px;
@@ -2099,15 +2099,8 @@ textarea:focus+label {
 }
 label {
  font-size:.875rem;
- font-weight:800;
- color:#fff;
- color:var(--white);
- background-color:#f40;
- background-color:var(--primary);
  border-radius:.25rem;
  border-radius:var(--border-radius);
- padding:.25rem .5rem;
- padding:var(--spacing-extra-small) var(--spacing-small);
  position:absolute;
  left:0;
  top:0;
