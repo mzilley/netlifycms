@@ -6028,7 +6028,7 @@ svg {
  box-shadow:var(--spacing-small) 0 0 var(--primary),-var(--spacing-small) 0 0 var(--primary)
 }
 :root {
- --primary:#f40;
+ --primary:#333;
  --highlight:#fed5c6;
  --white:#fff;
  --off-white:#fffdfc;
