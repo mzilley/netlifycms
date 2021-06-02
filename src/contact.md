@@ -1,7 +1,8 @@
 ---
 layout: contact
-title: Page Contact
-image: /static/img/logo.png
+title: Contact Us
+description: Contact us to talk to an egg
+image: /static/img/egg.jpg
 entries:
   - heading: Location
     text: 3153 Lynn Avenue, South San Francisco, California 94080
