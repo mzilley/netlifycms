@@ -80,7 +80,7 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Home Page"
+      - label: "Home"
         name: "home"
         file: "src/index.md"
         fields:
@@ -94,7 +94,7 @@ collections:
               { label: Image ALT, name: alt, widget: "string"}]}
           - {label: "Extra", name: extra, widget: object, summary: "Extra options", fields: [
               { label: Quick Links, name: quicklinks, widget: "boolean", default: true }]}
-      - label: "Contact Page"
+      - label: "Contact"
         name: "contact"
         file: "src/contact.md"
         fields:
