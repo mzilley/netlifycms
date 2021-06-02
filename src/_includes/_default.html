@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if title %}
-      <title>
-        {{ title }}{{ settings.SEO.separator }}{{ settings.SEO.site_name }}
-      </title>
-    {% endif %}
+    <title>{{ title }}{{ settings.SEO.separator }}{{ settings.SEO.site_name }}</title>
     <link rel="shortcut icon" type="image/jpg" href="{{ settings.favicon }}"/>
     {% if description %}
         <meta name="description" content="{{description}}"/>
     {% endif %}
+    {% if keywords %}
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+    {% endif %}
+    <meta property="og:image" content="{{ settings.favicon }}">
+    <meta property="og:title" content="{{settings.name}}">
+    <meta name="twitter:title" content="{{settings.name}}">
+    <meta property="og:locale" content="en_US" />
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     {% if prism == true %}
