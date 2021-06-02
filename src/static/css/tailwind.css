@@ -2101,11 +2101,7 @@ label {
  font-size:.875rem;
  border-radius:.25rem;
  border-radius:var(--border-radius);
- position:absolute;
- left:0;
- top:0;
  pointer-events:none;
- opacity:0;
  line-height:1;
  transition:all .15s ease;
  transition:var(--hover-transition);
