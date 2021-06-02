@@ -1,7 +1,7 @@
 backend:
   # Use netlify identity as backend
   name: git-gateway
-  repo: bublick/mzilley
+  repo: mzilley/netlifycms
   branch: main
   site_url: netlifycmsstart.netlify.app
   
