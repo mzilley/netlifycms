@@ -3,7 +3,7 @@ backend:
   name: git-gateway
   repo: mzilley/netlifycms
   branch: main
-  site_url: https://netlifycmsstarter.netlify.app
+  site_url: https://netlifycmsstart.netlify.app
   
   ### enable below lines for github integration ###
   name: github
