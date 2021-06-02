@@ -1,9 +1,9 @@
 backend:
   # Use netlify identity as backend
   name: git-gateway
-  repo: mzilley/netlifycms
+  repo: bublick/neat-starter
   branch: main
-  site_url: https://netlifycmsstart.netlify.app
+  site_url: https://bub-kaldi-11ty.netlify.app
   
   ### enable below lines for github integration ###
   # name: github
