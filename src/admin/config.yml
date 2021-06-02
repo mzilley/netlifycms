@@ -6,7 +6,7 @@ backend:
   site_url: https://netlifycmsstart.netlify.app
   
   ### enable below lines for github integration ###
-  name: github
+  # name: github
   repo: mzilley/netlifycms
   media_folder: "src/static/img"
   public_folder: "/static/img"
