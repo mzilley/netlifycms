@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}{{ settings.SEO.separator }}{{ settings.SEO.site_name }}</title>
+    <title>{{ metadata.title }}{{ settings.SEO.separator }}{{ settings.SEO.site_name }}</title>
     <link rel="shortcut icon" type="image/jpg" href="{{ settings.favicon }}"/>
-    {% if description %}
-        <meta name="description" content="{{description}}"/>
+    {% if metadata.description %}
+        <meta name="description" content="{{metadata.description}}"/>
     {% endif %}
-    {% if keywords %}
-        <meta name="keywords" content="{{keywords}}">
+    {% if metadata.keywords %}
+        <meta name="keywords" content="{{metadata.keywords}}">
     {% endif %}
     {% if author %}
         <meta name="author" content="{{author}}">
     {% endif %}
     <meta property="og:title" content="{{settings.name}}">
-    <meta property="og:description" content="{{description}}">
+    <meta property="og:description" content="{{metadata.description}}">
     <meta property="og:image" content="{{ settings.favicon }}">
     <meta property="og:url" content="https://netlifycmsstart.netlify.app/">
     <meta name="twitter:card" content="{{ settings.favicon }}">
