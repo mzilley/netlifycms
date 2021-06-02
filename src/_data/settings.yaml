@@ -1,6 +1,7 @@
 name: Netlify Starter
 author: Matt Zilley
 url: /
+favicon: /static/img/favicon.jpg
 SEO:
   site_name: Netlify Starter
   separator: " | "
