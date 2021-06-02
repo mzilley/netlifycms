@@ -1,5 +1,5 @@
 ---
-title: Home page
+title: Home
 description: Meta description of home page
 topsection:
   title: Netlify CMS Starter
