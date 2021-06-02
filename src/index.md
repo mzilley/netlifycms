@@ -10,5 +10,6 @@ extra:
   quicklinks: true
 layout: home
 path: home
+keywords: test, keyword, yay
 ---
 My starter template - many thanks to [@surjithctly](https://surjithctly.in/)
