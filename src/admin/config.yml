@@ -96,15 +96,16 @@ collections:
               { label: Image, name: image, widget: "image"},
               { label: Image ALT, name: alt, widget: "string"}]}
           - { label: Body, name: 'body', widget: "markdown" }
-          - {label: "Extra", name: extra, widget: object, summary: "Extra options", fields: [
+          - {label: "Quick Links", name: extra, widget: object, summary: "Extra options", fields: [
               { label: Quick Links, name: quicklinks, widget: "boolean", default: true }]}
       - label: "Contact"
         name: "contact"
         file: "src/contact.md"
         fields:
-          - { label: Title, name: title, widget: "string" }
-          - { label: Description, name: description, widget: string }
-          - { label: Keywords (comma separated), summary: "Comma separated", name: keywords, widget: string, required: false}
+          - {label: "Page Metadata", name: metadata, widget: object, fields: [
+              { label: Title, name: title, widget: string },
+              { label: Description, name: description, widget: string },
+              { label: Keywords (comma separated), summary: "Comma separated", name: keywords, widget: string, required: false}]}
           - { image: Image, name: image, widget: "image"}
           - { label: Body, name: 'body', widget: "markdown" }
           - label: "Entries"
@@ -121,9 +122,10 @@ collections:
         name: "values"
         file: "src/values.md"
         fields:
-          - { label: Title, name: title, widget: "string" }
-          - { label: Description, name: description, widget: string }
-          - { label: Keywords (comma separated), summary: "Comma separated", name: keywords, widget: string, required: false}
+          - {label: "Page Metadata", name: metadata, widget: object, fields: [
+              { label: Title, name: title, widget: string },
+              { label: Description, name: description, widget: string },
+              { label: Keywords (comma separated), summary: "Comma separated", name: keywords, widget: string, required: false}]}
           - { image: Cover, name: cover, widget: "image"}
           - label: "Values"
             name: values
