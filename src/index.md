@@ -16,4 +16,4 @@ extra:
 title: Home
 description: Meta description of home page
 ---
-My starter template - many thanks to [@surjithctly](https://surjithctly.in/)
+Starter template - many thanks to [@surjithctly](https://surjithctly.in/)
