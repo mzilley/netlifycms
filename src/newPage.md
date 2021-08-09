@@ -1,3 +1,4 @@
 ---
 layout: newPage
-title: New Page
+title: New Page (updated)
+---
