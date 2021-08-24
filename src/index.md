@@ -17,3 +17,7 @@ title: Home
 description: Meta description of home page
 ---
 Starter template - many thanks to [@surjithctly](https://surjithctly.in/)
+
+Lorem ipsum dolor sit amet.
+
+New line in CMS editor.
