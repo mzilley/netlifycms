@@ -2,9 +2,17 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+const markdownIt = require("markdown-it");
+const md = new markdownIt({
+  html: true,
+});
 
 module.exports = function (eleventyConfig) {
-  // Disable automatic use of your .gitignore
+  eleventyConfig.addFilter("markdown", (content) => {
+    return md.render(content);
+  });
+
+  // Disable automatic use of your .gitignoree
   eleventyConfig.setUseGitIgnore(false);
 
   // Merge data instead of overriding
@@ -47,7 +55,7 @@ module.exports = function (eleventyConfig) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
       return minified;
     }
