@@ -1,37 +1,40 @@
 ---
 layout: _default
 ---
+
 <div class="center mw6 pv3">
-    <img src="{{ image }}" alt="" class="db center pv4" />
+  <img src="{{ image }}" alt="" class="db center pv4" />
 
-    <h1 class="font-bold text-5xl">{{title}}</h1>
+  <h1 class="font-bold text-5xl">{{title}}</h1>
 
-    {{ content | safe }}
+  {{ content | safe }}
 
-    <div class="flex-ns mb3">
-        {% for entry in entries %}
-            <div>
-                <h4 class="f4 b lh-title mb2">{{ entry.heading }}</h4>
-                <p>{{ entry.text }}</p>
-            </div>
-        {% endfor %}
-    </div>
-    
+  <div class="flex-ns mb3">
+    {% for entry in entries %}
     <div>
-        <form name="contact" netlify>
-            <div class="grid grid-cols-2 gap-2">
-                <div class="form-group">
-                    <label>Name <input type="text" name="name" class="p-1.5 w-100" /></label>
-                </div>
-                <div class="form-group">
-                    <label>Email <input type="email" name="email" class="p-1.5 w-100" /></label>
-                </div>
-            </div>
-            <div class="bg-primary white text-center mt-3 p-1.5">
-                <button type="submit">Send</button>
-            </div>
-          </form>
+      <h4 class="f4 b lh-title mb2">{{ entry.heading }}</h4>
+      <p>{{ entry.text | markdown | safe }}</p>
     </div>
-    
+    {% endfor %}
+  </div>
 
+  <div>
+    <form name="contact" netlify>
+      <div class="grid grid-cols-2 gap-2">
+        <div class="form-group">
+          <label
+            >Name <input type="text" name="name" class="p-1.5 w-100"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label
+            >Email <input type="email" name="email" class="p-1.5 w-100"
+          /></label>
+        </div>
+      </div>
+      <div class="bg-primary white text-center mt-3 p-1.5">
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  </div>
 </div>
